@@ -22,6 +22,11 @@ body {
   max-width: 480px;
   padding: 0 15px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -88,9 +93,95 @@ body {
 .navigation {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+  }
+  .navigation__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    width: 254px;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation__link:hover, .navigation__link:focus, .navigation__link:active {
+    color: var(--accent-color);
+  }
+  .navigation__underliner {
+    position: relative;
+  }
+  .navigation__underliner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    transform: translateY(15px);
+  }
+}
 
 .contact {
   display: none;
+}
+@media screen and (min: width 768px) {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style-type: none;
+  }
+  .contact__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--descriptions-color);
+    text-decoration: none;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact__link:hover, .contact__link:focus, .contact__link:active {
+    color: var(--accent-color);
+  }
+  .contact__link:hover .envelope, .contact__link:focus .envelope {
+    fill: var(--accent-color);
+  }
+  .contact__link:hover .phone, .contact__link:focus .phone {
+    fill: var(--accent-color);
+  }
+}
+.contact .envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--descriptions-color);
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact .phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--descriptions-color);
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slider {
