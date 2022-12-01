@@ -1,0 +1,17 @@
+.mobile-menu {
+  &__btn {
+    border: none;
+    background-color: var(--title-color);
+    position: absolute;
+    top: -6px;
+    right: 0px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
