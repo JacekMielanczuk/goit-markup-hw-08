@@ -231,22 +231,6 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.slider__wrapper {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.slider__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  width: 696px;
-  text-align: center;
-}
 
 .modal {
   width: 528px;
