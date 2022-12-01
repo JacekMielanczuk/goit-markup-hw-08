@@ -20,6 +20,11 @@
   transition: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    width: 145px;
+    line-height: 1.19;
+  }
 
   &:hover,
   &:focus,
