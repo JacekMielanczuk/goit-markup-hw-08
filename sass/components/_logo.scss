@@ -7,10 +7,10 @@
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  width: 145px;
+  width: 134px;
   text-decoration: none;
   color: var(--main-color);
   transition: color;
@@ -26,3 +26,32 @@
     color: var(--accent-color);
   }
 }
+
+// .header-wrapper {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   border-bottom: 1px solid #ececec;
+// }
+// .logo {
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   width: 145px;
+//   text-decoration: none;
+//   color: var(--main-color);
+//   transition: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     color: var(--accent-color);
+//   }
+//   &__web {
+//     color: var(--accent-color);
+//   }
+// }
