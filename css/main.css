@@ -621,6 +621,11 @@ img {
   margin-top: 0;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .strengths__feature {
+    justify-content: center;
+  }
+}
 .strengths__description {
   font-weight: 400;
   font-size: 14px;

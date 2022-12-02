@@ -60,6 +60,9 @@
     color: var(--main-color);
     margin-top: 0;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
   }
   &__description {
     font-weight: 400;
