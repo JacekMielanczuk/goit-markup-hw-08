@@ -1,4 +1,7 @@
 .slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100vw;
   height: 400px;
   background-color: #2f303a;
@@ -65,6 +68,16 @@
         url(/images/Header\ img_tablet@2x.jpg);
     }
   }
+}
+.slider__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  min-width: 320px;
+  margin-left: 0;
+  text-align: center;
 }
 // .slider {
 //   background-color: #2f303a;
