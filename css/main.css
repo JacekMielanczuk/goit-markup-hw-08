@@ -73,6 +73,10 @@ img {
   padding-bottom: 0px;
 }
 
+.relative {
+  position: relative;
+}
+
 .backdrop {
   position: fixed;
   display: flex;
@@ -640,8 +644,25 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   list-style-type: none;
+  padding-left: 0px;
+}
+.scope__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .scope__title {
+    display: none;
+  }
 }
 .scope__position {
   position: absolute;
@@ -660,6 +681,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+@media screen and (max-width: 1199px) {
+  .scope {
+    display: none;
+  }
 }
 
 .section-background {
