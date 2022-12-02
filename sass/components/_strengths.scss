@@ -6,9 +6,21 @@
   gap: 30px;
   list-style-type: none;
   padding-left: 0px;
-
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
   &__wrapper {
     display: flex;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__item {
     display: flex;
@@ -22,6 +34,12 @@
     @media screen and (min-width: 480px) {
       width: 450px;
     }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__icon {
     display: flex;
@@ -33,7 +51,7 @@
   }
   &__feature {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -49,6 +67,12 @@
     letter-spacing: 0.03em;
     color: var(--descriptions-color);
     margin: 0px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
 

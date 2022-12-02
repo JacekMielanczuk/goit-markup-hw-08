@@ -38,6 +38,9 @@ img {
 }
 .section {
   padding-block: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-block: 94px;
+  }
 }
 // style dla pierwotnej wersji
 // body {
