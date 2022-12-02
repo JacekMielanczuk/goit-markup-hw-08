@@ -1,17 +1,27 @@
 .strengths {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   list-style-type: none;
+  padding-left: 0px;
 
+  &__wrapper {
+    display: flex;
+  }
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: center;
     background-color: var(--filters-color);
     margin-bottom: 30px;
     padding: 25px 100px 25px 100px;
+    width: 290 px;
+    height: 120px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
   }
   &__icon {
     display: flex;
@@ -22,11 +32,15 @@
     height: 70px;
   }
   &__feature {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    margin-top: 0;
+    margin-bottom: 10px;
   }
   &__description {
     font-weight: 400;
@@ -34,8 +48,48 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--descriptions-color);
-  }
-  &__wrapper {
-    display: flex;
+    margin: 0px;
   }
 }
+
+// .strengths {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 30px;
+//   list-style-type: none;
+
+//   &__item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     justify-content: center;
+//     background-color: var(--filters-color);
+//     margin-bottom: 30px;
+//     padding: 25px 100px 25px 100px;
+//   }
+//   &__icon {
+//     display: flex;
+//     align-items: center;
+//     fill: var(--filters-color);
+//     border-radius: 4px;
+//     width: 70px;
+//     height: 70px;
+//   }
+//   &__feature {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     color: var(--main-color);
+//   }
+//   &__description {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: var(--descriptions-color);
+//   }
+//   &__wrapper {
+//     display: flex;
+//   }
+// }

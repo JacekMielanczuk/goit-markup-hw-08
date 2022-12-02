@@ -55,6 +55,10 @@ img {
   padding: 0;
 }
 
+.section {
+  padding-block: 60px;
+}
+
 .backdrop {
   position: fixed;
   display: flex;
@@ -524,18 +528,30 @@ img {
 
 .strengths {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   list-style-type: none;
+  padding-left: 0px;
+}
+.strengths__wrapper {
+  display: flex;
 }
 .strengths__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: center;
   background-color: var(--filters-color);
   margin-bottom: 30px;
   padding: 25px 100px 25px 100px;
+  width: 290 px;
+  height: 120px;
+}
+@media screen and (min-width: 480px) {
+  .strengths__item {
+    width: 450px;
+  }
 }
 .strengths__icon {
   display: flex;
@@ -546,11 +562,15 @@ img {
   height: 70px;
 }
 .strengths__feature {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .strengths__description {
   font-weight: 400;
@@ -558,9 +578,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--descriptions-color);
-}
-.strengths__wrapper {
-  display: flex;
+  margin: 0px;
 }
 
 .scope {
