@@ -44,6 +44,21 @@ img {
   @media screen and (min-width: 1200px) {
     padding-block: 94px;
   }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      padding-bottom: 50px;
+    }
+  }
 }
 .no-padding {
   padding-bottom: 0px;
@@ -51,6 +66,23 @@ img {
 .relative {
   position: relative;
 }
+
+.margins {
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.shadows {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.no-gap {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 // style dla pierwotnej wersji
 // body {
 //   font-family: "Raleway", sans-serif;
