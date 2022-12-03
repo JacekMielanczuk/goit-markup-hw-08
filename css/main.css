@@ -856,28 +856,33 @@ img {
 }
 
 .footer {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
-}
-.footer--background-color {
+  padding: 60px 0;
   background-color: #2f303a;
 }
-.footer__flex {
+.footer__container {
   display: block;
   align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .footer__flex {
+  .footer__container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__flex {
-    justify-content: flex-start;
+.footer__address {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-left: 76px;
+    margin-right: 165px;
   }
 }
 .footer__title {
@@ -887,17 +892,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
   padding-bottom: 20px;
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer__title {
-    margin-top: 0px;
-  }
-}
 .footer__title--padding {
-  padding-bottom: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -908,8 +907,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  padding-top: 60px;
-  padding-left: 15px;
+  text-align: center;
   text-decoration: none;
   list-style-type: none;
   transition: color;
@@ -919,33 +917,16 @@ img {
 .footer__logo:hover, .footer__logo:focus, .footer__logo:active {
   color: var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
-  .footer__logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    height: 252px;
-    align-items: flex-start;
-  }
-}
 
 .adress-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-left: 15px;
+  padding-left: 0px;
   margin-block: 0px;
   gap: 8px;
   list-style-type: none;
-}
-@media screen and (min-width: 1200px) {
-  .adress-wrapper {
-    align-items: flex-start;
-  }
 }
 
 .address {
@@ -980,13 +961,13 @@ img {
 }
 
 .social-padding {
-  display: flex;
+  display: block;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .social-padding {
-    padding-top: 72px;
-    padding-left: 70px;
+    margin-right: 46px;
   }
 }
 
@@ -1001,11 +982,6 @@ img {
   padding-left: 0;
   list-style-type: none;
   margin-block: 0px;
-}
-@media screen and (min-width: 768px) {
-  .social-footer {
-    justify-content: flex-start;
-  }
 }
 .social-footer__link {
   display: flex;
@@ -1033,22 +1009,19 @@ img {
 }
 
 .newsletter-padding {
-  padding-top: 72px;
-  padding-left: 78px;
-  display: flex;
+  display: block;
   flex-direction: column;
 }
 
 .newsletter {
-  display: flex;
-  align-items: center;
+  display: block;
 }
 .newsletter__fieldset {
   display: flex;
   align-items: center;
   margin-left: 0px;
   margin-right: 0px;
-  width: 358px;
+  max-width: 450px;
   height: 50px;
   padding-top: 10px;
   padding-inline: 16px 0px;
@@ -1059,6 +1032,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .newsletter__fieldset {
+    width: 450px;
+  }
+}
 .newsletter__fieldset:has(input:focus) {
   border-color: var(--accent-color);
 }
@@ -1067,8 +1045,13 @@ img {
   border: 0;
   outline: 0;
   background-color: transparent;
-  width: 342px;
+  max-width: 400px;
   color: var(--title-color);
+}
+@media screen and (min-width: 768px) {
+  .newsletter__input {
+    width: 400px;
+  }
 }
 .newsletter__input::placeholder {
   font-weight: 400;
@@ -1086,9 +1069,9 @@ img {
   justify-content: space-evenly;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 12px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0 0;
+  margin-inline: auto;
+  margin-top: 20px;
 }
 
 .button__icon-send {
