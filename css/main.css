@@ -452,6 +452,7 @@ img {
   color: var(--descriptions-color);
 }
 .main-form__icon {
+  position: absolute;
   text-align: center;
   margin-block: 5px;
   margin-right: 12px;
