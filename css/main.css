@@ -921,8 +921,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    align-items: flex-start;
     height: 252px;
+    align-items: flex-start;
   }
 }
 

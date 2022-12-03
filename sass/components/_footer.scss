@@ -65,8 +65,8 @@
     height: 463px;
   }
   @media screen and (min-width: 1200px) {
-    align-items: flex-start;
     height: 252px;
+    align-items: flex-start;
   }
 }
 
@@ -79,6 +79,7 @@
   margin-block: 0px;
   gap: 8px;
   list-style-type: none;
+
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
   }
