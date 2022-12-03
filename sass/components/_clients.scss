@@ -1,13 +1,16 @@
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
+  padding-left: 0px;
+  gap: 30px;
 
   &__client {
     border: 1px solid #afb1b8;
     border-radius: 4%;
-    width: 170px;
+    width: 210px;
     height: 92px;
     padding: 16px 32px 16px 32px;
     fill: var(--client-color);
@@ -19,6 +22,12 @@
     &:focus {
       border-color: var(--accent-color);
       fill: var(--accent-color);
+    }
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
 }
