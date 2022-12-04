@@ -6,6 +6,10 @@
 .newsletter {
   display: block;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   &__fieldset {
     display: flex;
     align-items: center;
@@ -24,6 +28,9 @@
     @media screen and (min-width: 768px) {
       width: 450px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 
     &:has(input:focus) {
       border-color: var(--accent-color);
@@ -38,6 +45,9 @@
     color: var(--title-color);
     @media screen and (min-width: 768px) {
       width: 400px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 100%;
     }
 
     &::placeholder {
@@ -61,6 +71,10 @@
   padding: 0 0;
   margin-inline: auto;
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-left: 12px;
+  }
 }
 
 .button__icon-send {
