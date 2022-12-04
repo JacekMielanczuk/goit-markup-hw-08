@@ -17,9 +17,16 @@
     <!--Logo-->
     <header class="container">
       <div class="header-wrapper">
-        <!-- mobilna nawigacja -->
-        <!-- koniec moblinej nawigacji -->
         <div class="header-wrapper">
+          <!-- mobilna nawigacja -->
+          <div class="mobile-menu__overlay" data-menu>
+            <button class="mobile-menu__btn" type="button" data-menu-close>
+              <svg class="mobile-menu__icon">
+                <use href="./images/icons.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- koniec moblinej nawigacji -->
           <a class="logo" href="index.html"
             ><span class="logo__web">Web</span><span>Studio</span></a
           >
@@ -698,5 +705,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
