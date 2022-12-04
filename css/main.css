@@ -212,7 +212,13 @@ img {
   height: 100%;
   background-color: var(--title-color);
   z-index: 999;
-  opacity: 0;
+}
+
+.mobile-menu__btn {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  right: 0;
 }
 
 .mobile-menu__icon {
