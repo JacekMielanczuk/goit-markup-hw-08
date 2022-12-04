@@ -215,17 +215,32 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu__overlay {
+    display: none;
+  }
+}
 
 .mobile-menu__overlay.is-open {
   left: 0;
+}
+
+.mobile-menu {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu__btn {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 360px;
+  position: absolute;
+  right: 10;
+  top: 10;
 }
 
 .mobile-menu__icon {
@@ -239,6 +254,41 @@ img {
 }
 .mobile-menu__icon:hover, .mobile-menu__icon:focus {
   fill: var(--accent-color);
+}
+
+.mobile-menu__list {
+  list-style-type: none;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__tel {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__mail {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--descriptions-color);
 }
 
 .navigation {
