@@ -16,7 +16,10 @@
   left: 0;
 }
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -26,8 +29,8 @@
   border: 0;
   cursor: pointer;
   position: absolute;
-  right: 10;
-  top: 10;
+  top: 10px;
+  right: 10px;
 }
 .mobile-menu__icon {
   display: flex;
@@ -73,4 +76,12 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--descriptions-color);
+}
+.mobile-menu__site {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
