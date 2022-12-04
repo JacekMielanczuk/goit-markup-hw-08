@@ -10,41 +10,66 @@
       gap: 46px;
       margin-left: 93px;
     }
+  }
+  &__btn {
+    background-color: transparent;
+    border: 0px;
+    display: flex;
 
-    &__link {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: var(--main-color);
-      width: 254px;
-      text-decoration: none;
-      color: var(--main-color);
+    cursor: pointer;
+    fill: var(--main-color);
 
-      transition: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover,
-      &:focus,
-      &:active {
-        color: var(--accent-color);
-      }
+    @media screen and (min-width: 768px) {
+      display: none;
     }
-    &__underliner {
-      position: relative;
+  }
+  &__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    fill: var(--main-color);
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 30px;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-color);
-        transform: translateY(15px);
-      }
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    width: 254px;
+    text-decoration: none;
+    color: var(--main-color);
+
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--accent-color);
+    }
+  }
+  &__underliner {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      transform: translateY(15px);
     }
   }
 }

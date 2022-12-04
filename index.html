@@ -17,20 +17,12 @@
     <!--Logo-->
     <header class="container">
       <div class="header-wrapper">
+        <!-- mobilna nawigacja -->
+        <!-- koniec moblinej nawigacji -->
         <div class="header-wrapper">
           <a class="logo" href="index.html"
             ><span class="logo__web">Web</span><span>Studio</span></a
           >
-          <!-- mobilna nawigacja -->
-          <div class="mobile-menu__overlay" data-menu>
-            <div class="mobile-menu">
-              <button class="mobile-menu__btn" type="button" data-menu-open>
-                <svg class="mobile-menu__icon">
-                  <use href="./images/icons.svg#icon-close_40px"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
           <!-- Nawigacja -->
           <nav>
             <ul class="navigation">
@@ -68,6 +60,11 @@
             >
           </li>
         </ul>
+        <button class="navigation__btn" type="button" data-menu-open>
+          <svg class="navigation__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
