@@ -141,7 +141,7 @@ img {
 }
 
 .is-hidden {
-  transform: translateX(-100%);
+  transform: translateX(-150%);
 }
 
 .header-wrapper {
@@ -392,13 +392,19 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin: auto;
   padding: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__btn {
   cursor: pointer;
@@ -419,6 +425,13 @@ img {
   justify-content: center;
   margin-top: 2px;
   color: var(--main-color);
+  width: 370px;
+  margin-left: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    width: 448px;
+  }
 }
 
 .modal-content {
@@ -435,7 +448,7 @@ img {
 .main-form__fieldset {
   display: flex;
   position: relative;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -444,6 +457,12 @@ img {
   transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .main-form__fieldset {
+    width: 448px;
+    height: 40px;
+  }
 }
 .main-form__fieldset:has(input:focus) {
   border-color: var(--accent-color);
@@ -492,22 +511,33 @@ img {
 .main-form__input {
   border: 0;
   outline: 0;
-  width: 390px;
+  margin-left: 20px;
+  width: 350px;
+}
+@media screen and (min-width: 1200px) {
+  .main-form__input {
+    width: 390px;
+    margin-left: 20px;
+  }
 }
 
 .main-form__fieldset-two {
   display: flex;
   position: relative;
-  width: 448px;
-  height: 40px;
+  width: 396px;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-block: 7px;
   margin-bottom: 20px;
-  height: 120px;
   transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .main-form__fieldset-two {
+    width: 448px;
+  }
 }
 .main-form__fieldset-two:has(textarea:focus) {
   border-color: var(--accent-color);
@@ -521,6 +551,11 @@ img {
   resize: none;
   outline: 0;
 }
+@media screen and (min-width: 1200px) {
+  .main-form__textarea {
+    height: 96px;
+  }
+}
 .main-form__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -533,12 +568,18 @@ img {
   position: relative;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--descriptions-color);
   cursor: pointer;
   padding-left: 6px;
+}
+@media screen and (min-width: 1200px) {
+  .legal {
+    font-size: 14px;
+    list-style: 1.71;
+  }
 }
 .legal__span {
   color: rgb(33, 150, 243);
@@ -549,8 +590,8 @@ img {
   width: 16px;
   height: 15px;
   position: absolute;
-  left: -2px;
-  top: 4px;
+  left: -10px;
+  top: 1px;
   opacity: 1;
   transition: opacity;
   transition-duration: 250ms;
@@ -560,8 +601,8 @@ img {
   width: 17px;
   height: 16px;
   position: absolute;
-  left: -3px;
-  top: 3px;
+  left: -10px;
+  top: 1px;
   opacity: 0;
   transition: opacity;
   transition-duration: 250ms;
