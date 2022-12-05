@@ -498,6 +498,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Headerimg_tablet.jpg);
     background-size: cover;
     background-position: 50% 50%;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 191dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -558,6 +559,11 @@ img {
   margin: auto;
   padding: 8px;
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -583,7 +589,7 @@ img {
   justify-content: center;
   margin-top: 2px;
   color: var(--main-color);
-  width: 370px;
+  max-width: 370px;
   margin-left: 40px;
 }
 @media screen and (min-width: 1200px) {
@@ -603,6 +609,11 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 479px) {
+  .main-form {
+    max-width: 100%;
+  }
+}
 .main-form__fieldset {
   display: flex;
   position: relative;
@@ -615,6 +626,11 @@ img {
   transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .main-form__fieldset {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-form__fieldset {
@@ -672,6 +688,11 @@ img {
   margin-left: 20px;
   width: 350px;
 }
+@media screen and (max-width: 479px) {
+  .main-form__input {
+    max-width: 75%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-form__input {
     width: 390px;
@@ -691,6 +712,11 @@ img {
   transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .main-form__fieldset-two {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-form__fieldset-two {
