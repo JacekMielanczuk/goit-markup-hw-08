@@ -480,7 +480,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100vw;
+  max-width: 100vw;
   height: 400px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Headerimg.jpg);
