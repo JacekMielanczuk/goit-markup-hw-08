@@ -445,19 +445,19 @@ img {
   width: 100vw;
   height: 400px;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header\ img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header\ img.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 191dpi), (min-resolution: 2dppx) {
   .slider {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header\ img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header\ img@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .slider {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header\ img_tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header\ img_tablet.jpg);
     background-size: cover;
     background-position: 50% 50%;
   }
