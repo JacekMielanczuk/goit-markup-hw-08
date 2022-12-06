@@ -229,9 +229,7 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-bottom: 48px;
+  padding-block: 48px;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
