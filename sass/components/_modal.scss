@@ -67,7 +67,7 @@
   &__fieldset {
     display: flex;
     position: relative;
-    width: 370px;
+    width: 396px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -138,10 +138,10 @@
   border: 0;
   outline: 0;
   margin-left: 20px;
-  width: 350px;
+  max-width: 100%;
 
   @media screen and (max-width: 479px) {
-    max-width: 75%;
+    max-width: 100%;
   }
   @media screen and (min-width: 1200px) {
     width: 390px;
