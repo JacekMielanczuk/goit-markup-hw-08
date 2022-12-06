@@ -33,7 +33,6 @@
       url(../images/Headerimg_tablet.jpg);
     background-size: cover;
     background-position: 50% 50%;
-    max-width: 1600px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 191dpi),
@@ -55,8 +54,9 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/HeaderImg_desktop.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 191dpi),
