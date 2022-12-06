@@ -589,8 +589,14 @@ img {
   justify-content: center;
   margin-top: 2px;
   color: var(--main-color);
-  max-width: 370px;
+  width: 370px;
   margin-left: 40px;
+}
+@media screen and (max-width: 479px) {
+  .modal__title {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
@@ -781,6 +787,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .legal__basic {
+    left: 0px;
+  }
+}
 .legal__check {
   width: 17px;
   height: 16px;
@@ -791,6 +802,11 @@ img {
   transition: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .legal__check {
+    left: 0px;
+  }
 }
 
 .legal input {
