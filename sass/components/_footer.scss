@@ -44,6 +44,9 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
 
     &--padding {
       margin-top: 0px;
