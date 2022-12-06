@@ -520,9 +520,11 @@ img {
   .slider {
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/HeaderImg_desktop.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 191dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
